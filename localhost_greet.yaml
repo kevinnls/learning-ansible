@@ -5,3 +5,7 @@
   tasks:
           - name: saying hi
             command: 'echo hi!'
+          - name: logging wd to ~
+            command: >
+                    echo "[$(date +'%F %T')] : $(pwd)" | tee -a $HOME/pwd.log
+                    # so redirection of any kind did not work!
