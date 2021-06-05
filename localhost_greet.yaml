@@ -1,0 +1,7 @@
+---
+# Ansible playbook to set my typical Linux system
+- name : greet
+  hosts: localhost
+  tasks:
+          - name: saying hi
+            command: 'echo hi!'
