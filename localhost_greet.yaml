@@ -22,4 +22,7 @@
 
             # i don't want to be disappointed that NOTHING i tried worked!
           - name: use the example
-            command: touch ~/ansible_was_here
+            command: >
+                    touch ~/ansible_was_here
+                    warn=false
+
