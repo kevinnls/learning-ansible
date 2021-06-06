@@ -19,3 +19,7 @@
                     #[$(date +'%F %T')] : $(pwd)
                     #EOM
             ### so redirection of any kind did not work! ###
+
+            # i don't want to be disappointed that NOTHING i tried worked!
+          - name: use the example
+            command: touch ~/ansible_was_here
