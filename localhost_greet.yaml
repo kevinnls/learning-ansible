@@ -5,7 +5,17 @@
   tasks:
           - name: saying hi
             command: 'echo hi!'
-          - name: logging wd to ~
-            command: >
-                    echo "[$(date +'%F %T')] : $(pwd)" | tee -a $HOME/pwd.log
-                    # so redirection of any kind did not work!
+            
+            ### so redirection of any kind did not work! ###
+            #- name: logging wd to ~
+            #command: >
+                    #echo "[$(date +'%F %T')] : $(pwd)" | tee -a $HOME/pwd.log
+            #- name: logging wd to ~ using input redirection
+                    #command: >
+                    #cat >> $HOME/pwd.log <<<(echo "[$(date +'%F %T')] : $(pwd)") 
+            #- name: logging wd to ~ using heredoc
+            #command: >
+                    #cat << EOM >> $HOME/pwd.log
+                    #[$(date +'%F %T')] : $(pwd)
+                    #EOM
+            ### so redirection of any kind did not work! ###
