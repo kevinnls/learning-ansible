@@ -1,6 +1,6 @@
 ---
 # Ansible playbook to set my typical Linux system
-- name : greet
+- name : hello, Ansible!
   hosts: localhost
   tasks:
           - name: saying hi
