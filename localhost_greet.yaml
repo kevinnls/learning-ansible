@@ -25,4 +25,7 @@
             command: >
                     touch ~/ansible_was_here
                     warn=false
-
+          - name: use shell module for redirection!
+            shell: >
+                    echo "[$(date +'%F %T')] : $(pwd)" | tee -a $HOME/pwd.log
+                    # yeee. it worked!
