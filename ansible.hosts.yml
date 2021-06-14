@@ -4,3 +4,17 @@ all:
       ansible_host: 127.0.0.1
       ansible_port: 8022
       greeting: "hello, world!"
+      variables:
+        greeting: "hello, world!"
+        year: 2021
+        version:
+          major: 0
+          minor: 1
+          patch: 0
+        package_list:
+          - vim-full
+          - curl
+          - aria2
+          - git
+          - zsh
+        isBoolean: true
