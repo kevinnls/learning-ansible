@@ -29,3 +29,5 @@
             shell: >
                     echo "[$(date +'%F %T')] : $(pwd)" | tee -a $HOME/pwd.log
                     # yeee. it worked!
+          - name: use different variables
+            command: echo {{ variables.stringVersion | default(variables.version.major) }}
